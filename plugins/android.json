@@ -13,6 +13,11 @@
         "cordova-plugin-device": {
             "PACKAGE_NAME": "com.spect_ar.app"
         },
+        "cordova-plugin-facebook4": {
+            "APP_ID": "257410241352880",
+            "APP_NAME": "spect-ar",
+            "PACKAGE_NAME": "com.spect_ar.app"
+        },
         "cordova-plugin-nativestorage": {
             "PACKAGE_NAME": "com.spect_ar.app"
         },

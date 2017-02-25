@@ -49,6 +49,14 @@ module.exports = [
         ]
     },
     {
+        "id": "cordova-plugin-facebook4.FacebookConnectPlugin",
+        "file": "plugins/cordova-plugin-facebook4/www/facebook-native.js",
+        "pluginId": "cordova-plugin-facebook4",
+        "clobbers": [
+            "facebookConnectPlugin"
+        ]
+    },
+    {
         "id": "cordova-plugin-nativestorage.mainHandle",
         "file": "plugins/cordova-plugin-nativestorage/www/mainHandle.js",
         "pluginId": "cordova-plugin-nativestorage",
@@ -100,6 +108,7 @@ module.exports.metadata =
     "cordova-plugin-camera": "2.3.1",
     "cordova-plugin-console": "1.0.5",
     "cordova-plugin-device": "1.1.4",
+    "cordova-plugin-facebook4": "1.7.4",
     "cordova-plugin-nativestorage": "2.2.1",
     "cordova-plugin-splashscreen": "4.0.1",
     "cordova-plugin-statusbar": "2.2.1",

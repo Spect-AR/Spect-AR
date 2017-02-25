@@ -29,6 +29,34 @@
                             "count": 1
                         },
                         {
+                            "xml": "<feature name=\"FacebookConnectPlugin\"><param name=\"ios-package\" value=\"FacebookConnectPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<plugin name=\"FacebookConnectPlugin\" value=\"FacebookConnectPlugin\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://m.facebook.com\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://graph.facebook.com\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://api.facebook.com\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://*.fbcdn.net\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://*.akamaihd.net\" />",
+                            "count": 1
+                        },
+                        {
                             "xml": "<feature name=\"NativeStorage\"><param name=\"ios-package\" value=\"NativeStorage\" /></feature>",
                             "count": 1
                         },
@@ -75,9 +103,36 @@
                             "count": 1
                         }
                     ],
-                    "FacebookAppID": [],
-                    "FacebookDisplayName": [],
-                    "CFBundleURLTypes": []
+                    "FacebookAppID": [
+                        {
+                            "xml": "<string>257410241352880</string>",
+                            "count": 1
+                        }
+                    ],
+                    "FacebookDisplayName": [
+                        {
+                            "xml": "<string>spect-ar</string>",
+                            "count": 1
+                        }
+                    ],
+                    "CFBundleURLTypes": [
+                        {
+                            "xml": "<array><dict><key>CFBundleURLSchemes</key><array><string>fb257410241352880</string></array></dict></array>",
+                            "count": 1
+                        }
+                    ],
+                    "NSAppTransportSecurity": [
+                        {
+                            "xml": "<dict><key>NSExceptionDomains</key><dict><key>facebook.com</key><dict><key>NSIncludesSubdomains</key><true /><key>NSThirdPartyExceptionRequiresForwardSecrecy</key><false /></dict><key>fbcdn.net</key><dict><key>NSIncludesSubdomains</key><true /><key>NSThirdPartyExceptionRequiresForwardSecrecy</key><false /></dict><key>akamaihd.net</key><dict><key>NSIncludesSubdomains</key><true /><key>NSThirdPartyExceptionRequiresForwardSecrecy</key><false /></dict></dict></dict>",
+                            "count": 1
+                        }
+                    ],
+                    "LSApplicationQueriesSchemes": [
+                        {
+                            "xml": "<array><string>fbapi</string><string>fb-messenger-api</string><string>fbauth2</string><string>fbshareextension</string></array>",
+                            "count": 1
+                        }
+                    ]
                 }
             }
         }
@@ -98,6 +153,11 @@
             "PACKAGE_NAME": "com.spect_ar.app"
         },
         "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.spect_ar.app"
+        },
+        "cordova-plugin-facebook4": {
+            "APP_ID": "257410241352880",
+            "APP_NAME": "spect-ar",
             "PACKAGE_NAME": "com.spect_ar.app"
         },
         "cordova-plugin-nativestorage": {
@@ -183,6 +243,14 @@
             ]
         },
         {
+            "id": "cordova-plugin-facebook4.FacebookConnectPlugin",
+            "file": "plugins/cordova-plugin-facebook4/www/facebook-native.js",
+            "pluginId": "cordova-plugin-facebook4",
+            "clobbers": [
+                "facebookConnectPlugin"
+            ]
+        },
+        {
             "id": "cordova-plugin-nativestorage.mainHandle",
             "file": "plugins/cordova-plugin-nativestorage/www/mainHandle.js",
             "pluginId": "cordova-plugin-nativestorage",
@@ -232,6 +300,7 @@
         "cordova-plugin-camera": "2.3.1",
         "cordova-plugin-console": "1.0.5",
         "cordova-plugin-device": "1.1.4",
+        "cordova-plugin-facebook4": "1.7.4",
         "cordova-plugin-nativestorage": "2.2.1",
         "cordova-plugin-splashscreen": "4.0.1",
         "cordova-plugin-statusbar": "2.2.1",

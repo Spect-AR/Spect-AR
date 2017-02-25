@@ -1,4 +1,3 @@
-
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.spect_ar.app" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Spect-AR</name>
@@ -37,10 +36,9 @@
     <plugin name="cordova-plugin-statusbar" spec="~2.2.1" />
     <plugin name="cordova-plugin-splashscreen" spec="~4.0.1" />
     <plugin name="ionic-plugin-keyboard" spec="~2.2.1" />
-    <plugin name="phonegap-facebook-plugin" spec="~0.12.0">
+    <plugin name="cordova-plugin-nativestorage" spec="~2.2.1" />
+    <plugin name="cordova-plugin-facebook4" spec="cordova-plugin-facebook4">
         <variable name="APP_ID" value="257410241352880" />
         <variable name="APP_NAME" value="spect-ar" />
     </plugin>
-    <plugin name="cordova-plugin-nativestorage" spec="~2.2.1" />
 </widget>
-
