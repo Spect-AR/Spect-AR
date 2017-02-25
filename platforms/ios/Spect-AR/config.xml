@@ -15,6 +15,9 @@
         <param name="ios-package" value="CDVGestureHandler" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="WikitudePlugin">
+        <param name="ios-package" value="WTWikitudePlugin" />
+    </feature>
     <feature name="Camera">
         <param name="ios-package" value="CDVCamera" />
     </feature>
@@ -38,37 +41,12 @@
     <feature name="Keyboard">
         <param name="ios-package" onload="true" value="IonicKeyboard" />
     </feature>
-<<<<<<< HEAD:platforms/ios/Spect-AR/config.xml
-    <feature name="FacebookConnectPlugin">
-        <param name="ios-package" value="FacebookConnectPlugin" />
-        <param name="onload" value="true" />
-    </feature>
-    <plugin name="FacebookConnectPlugin" value="FacebookConnectPlugin" />
-    <access origin="https://m.facebook.com" />
-    <access origin="https://graph.facebook.com" />
-    <access origin="https://api.facebook.com" />
-    <access origin="https://*.fbcdn.net" />
-    <access origin="https://*.akamaihd.net" />
     <name>Spect-AR</name>
     <description>The Spect-AR project develops open-source software for reliable, scalable, face recognition in glasses. The Spect-AR provides simple tools to setup a phone app that has face recognition. This whole project can be used and advanced as needed for any reason. The main goal is to be able to recognize people with ease. </description>
     <author email="meghamallya1@gmail.com" href="google.com">Megha, Osmar, Dean, William and Gary</author>
     <content src="index.html" />
-=======
-    <feature name="WikitudePlugin">
-        <param name="ios-package" value="WTWikitudePlugin" />
-    </feature>
-    <name>myApp</name>
-    <description>An awesome Ionic/Cordova app.</description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
-    <content original-src="index.html" src="http://10.192.73.207:8100" />
->>>>>>> c2875db9d81b0820848e7dea432b7791f835a360:platforms/ios/myApp/config.xml
     <access origin="*" />
     <allow-navigation href="http://ionic.local/*" />
-<<<<<<< HEAD
-    <allow-navigation href="http://10.192.73.207:8100" />
-=======
-    <allow-navigation href="http://10.192.234.234:8100" />
->>>>>>> b6014e126d11d7bc517851725d0ba6ece497ee46
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<merger version="3"><dataSet config="main"><source path="/Users/meghamallya/Desktop/Spect-AR/platforms/android/CordovaLib/src/main/jniLibs"/></dataSet><dataSet config="release"><source path="/Users/meghamallya/Desktop/Spect-AR/platforms/android/CordovaLib/src/release/jniLibs"/></dataSet></merger>
-=======
-<merger version="3"><dataSet config="main"><source path="/Users/OsmarCoronel/Desktop/Spect-AR/platforms/android/CordovaLib/src/main/jniLibs"/></dataSet><dataSet config="release"><source path="/Users/OsmarCoronel/Desktop/Spect-AR/platforms/android/CordovaLib/src/release/jniLibs"/></dataSet></merger>
->>>>>>> c2875db9d81b0820848e7dea432b7791f835a360

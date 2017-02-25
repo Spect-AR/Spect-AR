@@ -1,6 +1,14 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
+        "id": "com.wikitude.phonegap.WikitudePlugin.WikitudePlugin",
+        "file": "plugins/com.wikitude.phonegap.WikitudePlugin/www/WikitudePlugin.js",
+        "pluginId": "com.wikitude.phonegap.WikitudePlugin",
+        "clobbers": [
+            "WikitudePlugin"
+        ]
+    },
+    {
         "id": "cordova-plugin-camera.Camera",
         "file": "plugins/cordova-plugin-camera/www/CameraConstants.js",
         "pluginId": "cordova-plugin-camera",
@@ -98,27 +106,12 @@ module.exports = [
             "cordova.plugins.Keyboard"
         ],
         "runs": true
-    },
-    {
-<<<<<<< HEAD
-        "id": "phonegap-facebook-plugin.FacebookConnectPlugin",
-        "file": "plugins/phonegap-facebook-plugin/facebookConnectPlugin.js",
-        "pluginId": "phonegap-facebook-plugin",
-        "clobbers": [
-            "facebookConnectPlugin"
-=======
-        "id": "com.wikitude.phonegap.WikitudePlugin.WikitudePlugin",
-        "file": "plugins/com.wikitude.phonegap.WikitudePlugin/www/WikitudePlugin.js",
-        "pluginId": "com.wikitude.phonegap.WikitudePlugin",
-        "clobbers": [
-            "WikitudePlugin"
->>>>>>> c2875db9d81b0820848e7dea432b7791f835a360
-        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
+    "com.wikitude.phonegap.WikitudePlugin": "6.0.1",
     "cordova-plugin-compat": "1.1.0",
     "cordova-plugin-camera": "2.3.1",
     "cordova-plugin-console": "1.0.5",
@@ -127,12 +120,7 @@ module.exports.metadata =
     "cordova-plugin-splashscreen": "4.0.1",
     "cordova-plugin-statusbar": "2.2.1",
     "cordova-plugin-whitelist": "1.3.1",
-    "ionic-plugin-keyboard": "2.2.1",
-<<<<<<< HEAD
-    "phonegap-facebook-plugin": "0.12.0"
-=======
-    "com.wikitude.phonegap.WikitudePlugin": "6.0.1"
->>>>>>> c2875db9d81b0820848e7dea432b7791f835a360
+    "ionic-plugin-keyboard": "2.2.1"
 };
 // BOTTOM OF METADATA
 });
