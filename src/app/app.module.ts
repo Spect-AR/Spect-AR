@@ -12,10 +12,10 @@ import { UserPage } from '../pages/user/user';
   declarations: [
     MyApp,
     LoginPage,
-    UserPage
-    // AboutPage,
-    // ContactPage,
-    // HomePage,
+    UserPage,
+    AboutPage,
+    ContactPage,
+    HomePage
     // TabsPage
   ],
   imports: [
@@ -25,10 +25,10 @@ import { UserPage } from '../pages/user/user';
   entryComponents: [
     MyApp,
     LoginPage,
-    UserPage
-    // AboutPage,
-    // ContactPage,
-    // HomePage,
+    UserPage,
+    AboutPage,
+    ContactPage,
+    HomePage
     // TabsPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]

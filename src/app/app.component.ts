@@ -6,6 +6,7 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { LoginPage } from '../pages/login/login';
 import { UserPage } from '../pages/user/user';
+import { HomePage } from '../pages/home/home';
 // import { TabsPage } from '../pages/tabs/tabs';
 
 

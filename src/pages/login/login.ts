@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Facebook, NativeStorage } from 'ionic-native';
 import { NavController } from 'ionic-angular';
 import { UserPage } from '../user/user';
+import { HomePage } from '../home/home';
 
 @Component({
   selector: 'page-login',
@@ -20,12 +21,13 @@ export class LoginPage {
     //the permissions your facebook app needs from the user
     permissions = ["public_profile"];
 
+    
 
     Facebook.login(permissions)
     .then(function(response){
       let userId = response.authResponse.userID;
       let params = new Array();
-
+      console.log(userId);
       //Getting name and gender properties
       Facebook.api("/me?fields=name,gender", params)
       .then(function(user) {
@@ -42,8 +44,12 @@ export class LoginPage {
         }, function (error) {
           console.log(error);
         })
+        
       })
+
+      
     }, function(error){
+
       console.log(error);
     });
   }
