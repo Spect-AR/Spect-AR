@@ -50,11 +50,6 @@
 		B655B14C423E4DC4815CFD42 /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A3B34382174C959FF6EEC4 /* CDVViewController+SplashScreen.m */; };
 		2F9E9DDE0123456A94A2D1B7 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 78620D7995BE481B8B6F4724 /* CDVStatusBar.m */; };
 		75EC97CCC5F74ADAA55AF740 /* IonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BA788BC9154BFE9AC35C6D /* IonicKeyboard.m */; };
-		60A043A0F66D47BCBE74AF04 /* FacebookConnectPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E0656B748D4779885C85C7 /* FacebookConnectPlugin.m */; };
-		1D5A7C4760214C18ABFC0D0D /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9D9022B4014650938AAC8E /* FacebookSDK.framework */; };
-		C71A3F155AFE41589C5103B3 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F75BDBFA12F4E0BA025470D /* libsqlite3.dylib */; };
-		FA1AB7B50F9441F2A7F1F550 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4DBF336E624BE498A148F0 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		C5BB1B1DE2574C7B82321240 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB82A61FB884B88B9AC83C1 /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,12 +146,6 @@
 		55ABEC48CF63469FB13E2A13 /* CDVStatusBar.h */ = {isa = PBXFileReference; name = "CDVStatusBar.h"; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		19BA788BC9154BFE9AC35C6D /* IonicKeyboard.m */ = {isa = PBXFileReference; name = "IonicKeyboard.m"; path = "ionic-plugin-keyboard/IonicKeyboard.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		35FE2853A054480D898C18E3 /* IonicKeyboard.h */ = {isa = PBXFileReference; name = "IonicKeyboard.h"; path = "ionic-plugin-keyboard/IonicKeyboard.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		B1E0656B748D4779885C85C7 /* FacebookConnectPlugin.m */ = {isa = PBXFileReference; name = "FacebookConnectPlugin.m"; path = "phonegap-facebook-plugin/FacebookConnectPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		65111FD9A48C4A6684E2A231 /* FacebookConnectPlugin.h */ = {isa = PBXFileReference; name = "FacebookConnectPlugin.h"; path = "phonegap-facebook-plugin/FacebookConnectPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		1A9D9022B4014650938AAC8E /* FacebookSDK.framework */ = {isa = PBXFileReference; name = "FacebookSDK.framework"; path = "Spect-AR/Plugins/phonegap-facebook-plugin/FacebookSDK.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		3F75BDBFA12F4E0BA025470D /* libsqlite3.dylib */ = {isa = PBXFileReference; name = "libsqlite3.dylib"; path = "usr/lib/libsqlite3.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
-		9E4DBF336E624BE498A148F0 /* Social.framework */ = {isa = PBXFileReference; name = "Social.framework"; path = "System/Library/Frameworks/Social.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		FAB82A61FB884B88B9AC83C1 /* Accounts.framework */ = {isa = PBXFileReference; name = "Accounts.framework"; path = "System/Library/Frameworks/Accounts.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,10 +176,6 @@
 				0861C5ECB4AB46BC934BB443 /* libc++.dylib in Frameworks */,
 				D41CFB1725474205895254EF /* libz.dylib in Frameworks */,
 				9C7BD709A1BF46BDAD13F13D /* ImageIO.framework in Frameworks */,
-				1D5A7C4760214C18ABFC0D0D /* FacebookSDK.framework in Frameworks */,
-				C71A3F155AFE41589C5103B3 /* libsqlite3.dylib in Frameworks */,
-				FA1AB7B50F9441F2A7F1F550 /* Social.framework in Frameworks */,
-				C5BB1B1DE2574C7B82321240 /* Accounts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,10 +268,6 @@
 				3326C58B94C64B91B65BCAB0 /* libc++.dylib */,
 				9D07FB2B8D5541B6B4F7E335 /* libz.dylib */,
 				B8A6D55487A642D28406D823 /* ImageIO.framework */,
-				1A9D9022B4014650938AAC8E /* FacebookSDK.framework */,
-				3F75BDBFA12F4E0BA025470D /* libsqlite3.dylib */,
-				9E4DBF336E624BE498A148F0 /* Social.framework */,
-				FAB82A61FB884B88B9AC83C1 /* Accounts.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -346,8 +327,6 @@
 				55ABEC48CF63469FB13E2A13 /* CDVStatusBar.h */,
 				19BA788BC9154BFE9AC35C6D /* IonicKeyboard.m */,
 				35FE2853A054480D898C18E3 /* IonicKeyboard.h */,
-				B1E0656B748D4779885C85C7 /* FacebookConnectPlugin.m */,
-				65111FD9A48C4A6684E2A231 /* FacebookConnectPlugin.h */,
 			);
 			name = Plugins;
 			path = "Spect-AR/Plugins";
@@ -472,7 +451,6 @@
 				B655B14C423E4DC4815CFD42 /* CDVViewController+SplashScreen.m in Sources */,
 				2F9E9DDE0123456A94A2D1B7 /* CDVStatusBar.m in Sources */,
 				75EC97CCC5F74ADAA55AF740 /* IonicKeyboard.m in Sources */,
-				60A043A0F66D47BCBE74AF04 /* FacebookConnectPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +494,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"Spect-AR/Plugins/phonegap-facebook-plugin\"",
+					"\"Spect-AR/Plugins/phonegap-facebook-plugin\"",
+					"\"Spect-AR/Plugins/phonegap-facebook-plugin\"",
 				);
 			};
 			name = Debug;
@@ -546,6 +526,8 @@
 				);
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"Spect-AR/Plugins/phonegap-facebook-plugin\"",
+					"\"Spect-AR/Plugins/phonegap-facebook-plugin\"",
 					"\"Spect-AR/Plugins/phonegap-facebook-plugin\"",
 				);
 			};

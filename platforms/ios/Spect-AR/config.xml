@@ -41,16 +41,6 @@
     <feature name="Keyboard">
         <param name="ios-package" onload="true" value="IonicKeyboard" />
     </feature>
-    <feature name="FacebookConnectPlugin">
-        <param name="ios-package" value="FacebookConnectPlugin" />
-        <param name="onload" value="true" />
-    </feature>
-    <plugin name="FacebookConnectPlugin" value="FacebookConnectPlugin" />
-    <access origin="https://m.facebook.com" />
-    <access origin="https://graph.facebook.com" />
-    <access origin="https://api.facebook.com" />
-    <access origin="https://*.fbcdn.net" />
-    <access origin="https://*.akamaihd.net" />
     <name>Spect-AR</name>
     <description>The Spect-AR project develops open-source software for reliable, scalable, face recognition in glasses. The Spect-AR provides simple tools to setup a phone app that has face recognition. This whole project can be used and advanced as needed for any reason. The main goal is to be able to recognize people with ease. </description>
     <author email="meghamallya1@gmail.com" href="google.com">Megha, Osmar, Dean, William and Gary</author>
