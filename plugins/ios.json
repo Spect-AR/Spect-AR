@@ -26,6 +26,7 @@
             "PACKAGE_NAME": "com.spect_ar.app"
         },
         "ionic-plugin-keyboard": {
+<<<<<<< HEAD
             "PACKAGE_NAME": "com.spect_ar.app"
         },
         "phonegap-facebook-plugin": {
@@ -37,11 +38,26 @@
     "dependent_plugins": {
         "cordova-plugin-compat": {
             "PACKAGE_NAME": "com.spect_ar.app"
+=======
+            "PACKAGE_NAME": "com.ionicframework.myapp411173"
+>>>>>>> c2875db9d81b0820848e7dea432b7791f835a360
         },
         "cordova-plugin-camera": {
             "CAMERA_USAGE_DESCRIPTION": " ",
             "PHOTOLIBRARY_USAGE_DESCRIPTION": " ",
+<<<<<<< HEAD
             "PACKAGE_NAME": "com.spect_ar.app"
+=======
+            "PACKAGE_NAME": "com.ionicframework.myapp411173"
+        },
+        "com.wikitude.phonegap.WikitudePlugin": {
+            "PACKAGE_NAME": "com.ionicframework.myapp411173"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.ionicframework.myapp411173"
+>>>>>>> c2875db9d81b0820848e7dea432b7791f835a360
         }
     }
 }

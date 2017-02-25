@@ -47,6 +47,7 @@
         "is_top_level": true,
         "variables": {}
     },
+<<<<<<< HEAD
     "phonegap-facebook-plugin": {
         "source": {
             "type": "registry",
@@ -62,6 +63,21 @@
         "source": {
             "type": "registry",
             "id": "cordova-plugin-nativestorage"
+=======
+    "cordova-plugin-camera": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-camera"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.wikitude.phonegap.WikitudePlugin": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Wikitude/wikitude-cordova-plugin.git",
+            "subdir": "."
+>>>>>>> c2875db9d81b0820848e7dea432b7791f835a360
         },
         "is_top_level": true,
         "variables": {}

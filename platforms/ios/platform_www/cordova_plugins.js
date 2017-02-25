@@ -100,11 +100,19 @@ module.exports = [
         "runs": true
     },
     {
+<<<<<<< HEAD
         "id": "phonegap-facebook-plugin.FacebookConnectPlugin",
         "file": "plugins/phonegap-facebook-plugin/facebookConnectPlugin.js",
         "pluginId": "phonegap-facebook-plugin",
         "clobbers": [
             "facebookConnectPlugin"
+=======
+        "id": "com.wikitude.phonegap.WikitudePlugin.WikitudePlugin",
+        "file": "plugins/com.wikitude.phonegap.WikitudePlugin/www/WikitudePlugin.js",
+        "pluginId": "com.wikitude.phonegap.WikitudePlugin",
+        "clobbers": [
+            "WikitudePlugin"
+>>>>>>> c2875db9d81b0820848e7dea432b7791f835a360
         ]
     }
 ];
@@ -120,7 +128,11 @@ module.exports.metadata =
     "cordova-plugin-statusbar": "2.2.1",
     "cordova-plugin-whitelist": "1.3.1",
     "ionic-plugin-keyboard": "2.2.1",
+<<<<<<< HEAD
     "phonegap-facebook-plugin": "0.12.0"
+=======
+    "com.wikitude.phonegap.WikitudePlugin": "6.0.1"
+>>>>>>> c2875db9d81b0820848e7dea432b7791f835a360
 };
 // BOTTOM OF METADATA
 });

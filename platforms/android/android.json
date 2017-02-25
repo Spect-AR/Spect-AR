@@ -37,6 +37,7 @@
                             "count": 1
                         },
                         {
+<<<<<<< HEAD
                             "xml": "<feature name=\"FacebookConnectPlugin\"><param name=\"android-package\" value=\"org.apache.cordova.facebook.ConnectPlugin\" /></feature>",
                             "count": 1
                         },
@@ -58,6 +59,9 @@
                         },
                         {
                             "xml": "<access origin=\"https://*.akamaihd.net\" />",
+=======
+                            "xml": "<feature name=\"WikitudePlugin\"><param name=\"android-package\" value=\"com.wikitude.phonegap.WikitudePlugin\" /></feature>",
+>>>>>>> c2875db9d81b0820848e7dea432b7791f835a360
                             "count": 1
                         }
                     ]
@@ -98,6 +102,70 @@
                             "xml": "<string name=\"fb_app_name\">spect-ar</string>",
                             "count": 1
                         }
+                    ],
+                    "/manifest": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_LOCATION_EXTRA_COMMANDS\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_GPS\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.CAMERA\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-feature android:glEsVersion=\"0x00020000\" android:required=\"true\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-feature android:name=\"android.hardware.camera\" android:required=\"true\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-feature android:name=\"android.hardware.location\" android:required=\"true\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-feature android:name=\"android.hardware.sensor.accelerometer\" android:required=\"true\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-feature android:name=\"android.hardware.sensor.compass\" android:required=\"true\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest/application": [
+                        {
+                            "xml": "<activity android:name=\"com.wikitude.tools.activities.MediaPlayerActivity\" android:screenOrientation=\"landscape\"><intent-filter><action android:name=\"android.intent.action.VIEW\" /><category android:name=\"android.intent.category.DEFAULT\" /></intent-filter></activity>",
+                            "count": 1
+                        }
                     ]
                 }
             }
@@ -129,12 +197,19 @@
             "PACKAGE_NAME": "com.spect_ar.app"
         },
         "ionic-plugin-keyboard": {
+<<<<<<< HEAD
             "PACKAGE_NAME": "com.spect_ar.app"
         },
         "phonegap-facebook-plugin": {
             "APP_ID": "257410241352880",
             "APP_NAME": "spect-ar",
             "PACKAGE_NAME": "com.spect_ar.app"
+=======
+            "PACKAGE_NAME": "com.ionicframework.myapp411173"
+        },
+        "com.wikitude.phonegap.WikitudePlugin": {
+            "PACKAGE_NAME": "com.ionicframework.myapp411173"
+>>>>>>> c2875db9d81b0820848e7dea432b7791f835a360
         }
     },
     "dependent_plugins": {},
@@ -212,10 +287,18 @@
             "runs": true
         },
         {
+<<<<<<< HEAD
             "file": "plugins/phonegap-facebook-plugin/facebookConnectPlugin.js",
             "id": "phonegap-facebook-plugin.FacebookConnectPlugin",
             "clobbers": [
                 "facebookConnectPlugin"
+=======
+            "id": "com.wikitude.phonegap.WikitudePlugin.WikitudePlugin",
+            "file": "plugins/com.wikitude.phonegap.WikitudePlugin/www/WikitudePlugin.js",
+            "pluginId": "com.wikitude.phonegap.WikitudePlugin",
+            "clobbers": [
+                "WikitudePlugin"
+>>>>>>> c2875db9d81b0820848e7dea432b7791f835a360
             ]
         }
     ],
@@ -229,6 +312,10 @@
         "cordova-plugin-statusbar": "2.2.1",
         "cordova-plugin-whitelist": "1.3.1",
         "ionic-plugin-keyboard": "2.2.1",
+<<<<<<< HEAD
         "phonegap-facebook-plugin": "0.12.0"
+=======
+        "com.wikitude.phonegap.WikitudePlugin": "6.0.1"
+>>>>>>> c2875db9d81b0820848e7dea432b7791f835a360
     }
 }

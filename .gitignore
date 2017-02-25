@@ -2,3 +2,5 @@
 # http://git-scm.com/docs/gitignore
 
 .DS_Store
+www/build/main.js
+www/build/main.js.map

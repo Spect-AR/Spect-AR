@@ -1,9 +1,31 @@
 {
     "ImageIO.framework": 1,
+<<<<<<< HEAD
     "CoreLocation.framework": 1,
     "AVFoundation.framework": 1,
     "libsqlite3.dylib": 1,
     "Social.framework": 1,
     "Accounts.framework": 1,
     "Security.framework": 1
+=======
+    "CoreLocation.framework": 2,
+    "AVFoundation.framework": 2,
+    "Accelerate.framework": 1,
+    "CFNetwork.framework": 1,
+    "CoreMedia.framework": 1,
+    "CoreMotion.framework": 1,
+    "CoreText.framework": 1,
+    "CoreVideo.framework": 1,
+    "Foundation.framework": 1,
+    "MediaPlayer.framework": 1,
+    "OpenGLES.framework": 1,
+    "Photos.framework": 1,
+    "QuartzCore.framework": 1,
+    "SafariServices.framework": 1,
+    "Security.framework": 1,
+    "SystemConfiguration.framework": 1,
+    "UIKit.framework": 1,
+    "libc++.dylib": 1,
+    "libz.dylib": 1
+>>>>>>> c2875db9d81b0820848e7dea432b7791f835a360
 }
