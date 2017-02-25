@@ -1,0 +1,2 @@
+# Spect-AR
+The Spect-AR project develops open-source software for reliable, scalable, face recognition in glasses.  The Spect-AR provides simple tools to setup a phone app that has face recognition. This whole project can be used and advanced as needed for any reason. The main goal is to be able to recognize people with ease. Some examples of future advances can be directed for security, were police can easily recognize people in a concert or a stadium. In the case of any emergency, the police will already have known who the suspects might be.
