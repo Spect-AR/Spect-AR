@@ -1,8 +1,12 @@
 page-about {
     .button {
         position: absolute;
-        top: 15%;
+        bottom: 10px;
         align-self: center;
+
     }
+    .center{
+        justify-content: center;    
+    }   
 
 }
