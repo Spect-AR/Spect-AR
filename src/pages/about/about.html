@@ -6,12 +6,16 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+
+<ion-content class="home">
   <ion-card>
     <ion-card-content>
-    <button (click)="takePicture()">Take a Picture</button>
-        <img [src]="base64Image" *ngIf="base64Image"/>
-      </ion-card-content>
-    </ion-card>
+      Hello World, this is my camera app
 
+      <button (click)="takePicture()">Take a Picture</button>
+
+      Latest Picture:
+      <img [src]="base64Image" *ngIf="base64Image" />
+    </ion-card-content>
+  </ion-card>
 </ion-content>

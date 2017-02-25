@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 
-import { NavController } from 'ionic-angular';
-
 import { Camera } from 'ionic-native';
 
 
@@ -18,14 +16,17 @@ export class AboutPage {
 
     takePicture(){Camera.getPicture({
     destinationType: Camera.DestinationType.DATA_URL,
-        targetWidth: 1000,
-        targetHeight: 1000
+    quality: 100,
+    targetWidth: 10000,
+    targetHeight: 10000
+
     }).then((imageData) => {
      // imageData is either a base64 encoded string or a file URI
      // If it's base64:
-     let base64Image = 'data:image/jpeg;base64,' + imageData;
+     this.base64Image = 'data:image/jpeg;base64,' + imageData;
     }, (err) => {
      // Handle error
+     console.log(err);
     });
     }
 
