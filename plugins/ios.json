@@ -8,23 +8,32 @@
     },
     "installed_plugins": {
         "cordova-plugin-console": {
-            "PACKAGE_NAME": "io.ionic.starter"
+            "PACKAGE_NAME": "com.ionicframework.myapp411173"
         },
         "cordova-plugin-device": {
-            "PACKAGE_NAME": "io.ionic.starter"
+            "PACKAGE_NAME": "com.ionicframework.myapp411173"
         },
         "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "io.ionic.starter"
+            "PACKAGE_NAME": "com.ionicframework.myapp411173"
         },
         "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "io.ionic.starter"
+            "PACKAGE_NAME": "com.ionicframework.myapp411173"
         },
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "io.ionic.starter"
+            "PACKAGE_NAME": "com.ionicframework.myapp411173"
         },
         "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "io.ionic.starter"
+            "PACKAGE_NAME": "com.ionicframework.myapp411173"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.ionicframework.myapp411173"
+        },
+        "cordova-plugin-camera": {
+            "CAMERA_USAGE_DESCRIPTION": " ",
+            "PHOTOLIBRARY_USAGE_DESCRIPTION": " ",
+            "PACKAGE_NAME": "com.ionicframework.myapp411173"
+        }
+    }
 }
