@@ -24,6 +24,11 @@
         },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "com.ionicframework.myapp411173"
+        },
+        "phonegap-facebook-plugin": {
+            "APP_ID": "257410241352880",
+            "APP_NAME": "spect-ar",
+            "PACKAGE_NAME": "com.ionicframework.myapp411173"
         }
     },
     "dependent_plugins": {

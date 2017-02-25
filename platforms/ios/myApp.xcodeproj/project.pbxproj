@@ -28,6 +28,12 @@
 		0A448E1968B747A4BC6C428A /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 280CA7CABB7F46129B28AB15 /* CDVViewController+SplashScreen.m */; };
 		F57D7D21BC1E4FAA8DC6D816 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B488EE97A4D11B1715BAB /* CDVStatusBar.m */; };
 		D5533B8EED0D41BABBAC1E45 /* IonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAF005A2A954F459D351296 /* IonicKeyboard.m */; };
+		A84EF33C444D4D4582651D45 /* FacebookConnectPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = EFBA319C99EE46B1B011F635 /* FacebookConnectPlugin.m */; };
+		292020B238724CC69EB6F2DA /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D19B8E1C5B4F269AD3E770 /* FacebookSDK.framework */; };
+		77902622B0BF43AAA0C04F26 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DE1AE82B91B74D919913E323 /* libsqlite3.dylib */; };
+		3B948EF890564108B6498C31 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7F3755BF4B426BA2FE3581 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A74A75A991094722A5978FAA /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6279C8D2C8841C785118A38 /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		39A43305766A478A91188EB6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A5A5ADC6F284993B052E5BC /* Security.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +96,13 @@
 		A38E6F270C754EE1BA33B447 /* CDVStatusBar.h */ = {isa = PBXFileReference; name = "CDVStatusBar.h"; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		ACAF005A2A954F459D351296 /* IonicKeyboard.m */ = {isa = PBXFileReference; name = "IonicKeyboard.m"; path = "ionic-plugin-keyboard/IonicKeyboard.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		887B1395896B4C55A4E87599 /* IonicKeyboard.h */ = {isa = PBXFileReference; name = "IonicKeyboard.h"; path = "ionic-plugin-keyboard/IonicKeyboard.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		EFBA319C99EE46B1B011F635 /* FacebookConnectPlugin.m */ = {isa = PBXFileReference; name = "FacebookConnectPlugin.m"; path = "phonegap-facebook-plugin/FacebookConnectPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		C5D27F1C0B8545E58787B536 /* FacebookConnectPlugin.h */ = {isa = PBXFileReference; name = "FacebookConnectPlugin.h"; path = "phonegap-facebook-plugin/FacebookConnectPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		05D19B8E1C5B4F269AD3E770 /* FacebookSDK.framework */ = {isa = PBXFileReference; name = "FacebookSDK.framework"; path = "myApp/Plugins/phonegap-facebook-plugin/FacebookSDK.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		DE1AE82B91B74D919913E323 /* libsqlite3.dylib */ = {isa = PBXFileReference; name = "libsqlite3.dylib"; path = "usr/lib/libsqlite3.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
+		8B7F3755BF4B426BA2FE3581 /* Social.framework */ = {isa = PBXFileReference; name = "Social.framework"; path = "System/Library/Frameworks/Social.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		C6279C8D2C8841C785118A38 /* Accounts.framework */ = {isa = PBXFileReference; name = "Accounts.framework"; path = "System/Library/Frameworks/Accounts.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		6A5A5ADC6F284993B052E5BC /* Security.framework */ = {isa = PBXFileReference; name = "Security.framework"; path = "System/Library/Frameworks/Security.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +114,11 @@
 				A6485466EAB94821B5691911 /* ImageIO.framework in Frameworks */,
 				E6B300A4C9074B3DBE5D6859 /* CoreLocation.framework in Frameworks */,
 				AFA92D96A6834240BAC42819 /* AVFoundation.framework in Frameworks */,
+				292020B238724CC69EB6F2DA /* FacebookSDK.framework in Frameworks */,
+				77902622B0BF43AAA0C04F26 /* libsqlite3.dylib in Frameworks */,
+				3B948EF890564108B6498C31 /* Social.framework in Frameworks */,
+				A74A75A991094722A5978FAA /* Accounts.framework in Frameworks */,
+				39A43305766A478A91188EB6 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +192,11 @@
 				9E84E8EFBCCC464DBEF9BC6B /* ImageIO.framework */,
 				5675D82995A943B0858C21D8 /* CoreLocation.framework */,
 				F15BB5A6565A49C5BF2CABDB /* AVFoundation.framework */,
+				05D19B8E1C5B4F269AD3E770 /* FacebookSDK.framework */,
+				DE1AE82B91B74D919913E323 /* libsqlite3.dylib */,
+				8B7F3755BF4B426BA2FE3581 /* Social.framework */,
+				C6279C8D2C8841C785118A38 /* Accounts.framework */,
+				6A5A5ADC6F284993B052E5BC /* Security.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -218,6 +241,8 @@
 				A38E6F270C754EE1BA33B447 /* CDVStatusBar.h */,
 				ACAF005A2A954F459D351296 /* IonicKeyboard.m */,
 				887B1395896B4C55A4E87599 /* IonicKeyboard.h */,
+				EFBA319C99EE46B1B011F635 /* FacebookConnectPlugin.m */,
+				C5D27F1C0B8545E58787B536 /* FacebookConnectPlugin.h */,
 			);
 			name = Plugins;
 			path = "myApp/Plugins";
@@ -339,6 +364,7 @@
 				0A448E1968B747A4BC6C428A /* CDVViewController+SplashScreen.m in Sources */,
 				F57D7D21BC1E4FAA8DC6D816 /* CDVStatusBar.m in Sources */,
 				D5533B8EED0D41BABBAC1E45 /* IonicKeyboard.m in Sources */,
+				A84EF33C444D4D4582651D45 /* FacebookConnectPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +400,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				PRODUCT_NAME = "myApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"myApp/Plugins/phonegap-facebook-plugin\"",
+				);
 			};
 			name = Debug;
 		};
@@ -396,6 +426,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				PRODUCT_NAME = "myApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"myApp/Plugins/phonegap-facebook-plugin\"",
+				);
 			};
 			name = Release;
 		};
