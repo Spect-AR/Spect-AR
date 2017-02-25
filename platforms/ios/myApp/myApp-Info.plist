@@ -56,7 +56,11 @@
           <key>NSExceptionAllowsInsecureHTTPLoads</key>
           <true/>
         </dict>
+<<<<<<< HEAD
         <key>10.192.73.207</key>
+=======
+        <key>10.192.234.234</key>
+>>>>>>> b6014e126d11d7bc517851725d0ba6ece497ee46
         <dict>
           <key>NSExceptionAllowsInsecureHTTPLoads</key>
           <true/>
