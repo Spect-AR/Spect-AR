@@ -8,37 +8,40 @@
     },
     "installed_plugins": {
         "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.ionicframework.myapp411173"
+            "PACKAGE_NAME": "com.spect_ar.app"
         },
         "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.ionicframework.myapp411173"
+            "PACKAGE_NAME": "com.spect_ar.app"
+        },
+        "cordova-plugin-nativestorage": {
+            "PACKAGE_NAME": "com.spect_ar.app"
         },
         "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "com.ionicframework.myapp411173"
+            "PACKAGE_NAME": "com.spect_ar.app"
         },
         "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "com.ionicframework.myapp411173"
+            "PACKAGE_NAME": "com.spect_ar.app"
         },
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.ionicframework.myapp411173"
+            "PACKAGE_NAME": "com.spect_ar.app"
         },
         "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "com.ionicframework.myapp411173"
+            "PACKAGE_NAME": "com.spect_ar.app"
         },
         "phonegap-facebook-plugin": {
             "APP_ID": "257410241352880",
             "APP_NAME": "spect-ar",
-            "PACKAGE_NAME": "com.ionicframework.myapp411173"
+            "PACKAGE_NAME": "com.spect_ar.app"
         }
     },
     "dependent_plugins": {
         "cordova-plugin-compat": {
-            "PACKAGE_NAME": "com.ionicframework.myapp411173"
+            "PACKAGE_NAME": "com.spect_ar.app"
         },
         "cordova-plugin-camera": {
             "CAMERA_USAGE_DESCRIPTION": " ",
             "PHOTOLIBRARY_USAGE_DESCRIPTION": " ",
-            "PACKAGE_NAME": "com.ionicframework.myapp411173"
+            "PACKAGE_NAME": "com.spect_ar.app"
         }
     }
 }
