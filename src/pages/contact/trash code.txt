@@ -1,0 +1,49 @@
+/*
+var bytesOfPictureCamera;
+fileReader.onload = function() {
+  var arrayBuffer = this.result;
+  var array = new Uint8Array(arrayBuffer);
+  var binaryString = String.fromCharCode.apply(null, array);
+  document.write(binaryString);
+}
+*/
+/*
+var file = new File([""], "NewBehaviour.cs");
+alert(file.size);
+var reader = new FileReader();
+reader.onload = function(e) {
+  var bytes = reader.result;
+  alert(bytes.length);
+}
+reader.readAsBinaryString(file);
+*/
+/*
+$.http.get('NewBehaviour.cs')
+.success(function(data) {
+  alert(data);
+});
+*/
+
+var params = {
+    // Request parameters
+    "returnFaceId": "true",
+    "returnFaceLandmarks": "false"
+};
+$.ajax({
+    url: "https://westus.api.cognitive.microsoft.com/face/v1.0/detect?" + $.param(params),
+    beforeSend: function(xhrObj) {
+        // Request headers
+        xhrObj.setRequestHeader("Content-Type","application/octet-stream");
+        xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","2371df3723034c31ad7fa1edcaaef6ec");
+    },
+    type: "POST",
+    // Request body
+    data: "{\"url\": \"https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/11071501_1566936493564305_5042811042189696337_n.jpg?oh=ba18772bbbfd89daafdd9a4237ef70fc&oe=59467009\"}",
+})
+.done(function(data) {
+    alert("success");
+    document.write(data);
+})
+.fail(function() {
+    alert("error");
+});
