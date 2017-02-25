@@ -44,6 +44,37 @@ export class ContactPage {
             return response.faceId;
         }
 
+        var getFaceId2 = function(bytesOfImage) {
+            var response;
+            var params = {
+                // Request parameters
+                "returnFaceId": "true",
+                "returnFaceLandmarks": "false"
+            };
+            $.ajax({
+                async: false,
+                url: "https://westus.api.cognitive.microsoft.com/face/v1.0/detect?" + $.param(params),
+                beforeSend: function(xhrObj) {
+                    // Request headers
+                    xhrObj.setRequestHeader("Content-Type","application/json");
+                    xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","2371df3723034c31ad7fa1edcaaef6ec");
+                },
+                type: "POST",
+                // Request body
+                data: "{\"url\": \"http://akns-images.eonline.com/eol_images/Entire_Site/2015516/rs_634x1024-150616073901-634.Donald-Trump.jl.061615.jpg\"}", // bytesOfImage,
+            })
+            .done(function(data) {
+                response = data[0];
+                // faceId = response.faceId;
+                // faceId = $.extend({}, response.faceId);
+                // return $.extend(true, {}, response.faceId);
+            })
+            .fail(function() {
+                alert("error");
+            });
+            return response.faceId;
+        }
+
         /* verify whether two faces represented by their face ID belong to the same person */
         var faceVerify = function(faceId1, faceId2) {
             var response;
@@ -71,7 +102,7 @@ export class ContactPage {
         var bytesOfImage1 = 1;
         var bytesOfImage2 = 1;
         var faceId1 = getFaceId(bytesOfImage1);
-        var faceId2 = getFaceId(bytesOfImage2);
+        var faceId2 = getFaceId2(bytesOfImage2);
         var isIdentical = faceVerify(faceId1, faceId2);
         console.log(isIdentical);
     }
