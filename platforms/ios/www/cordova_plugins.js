@@ -80,6 +80,14 @@ module.exports = [
             "cordova.plugins.Keyboard"
         ],
         "runs": true
+    },
+    {
+        "id": "com.wikitude.phonegap.WikitudePlugin.WikitudePlugin",
+        "file": "plugins/com.wikitude.phonegap.WikitudePlugin/www/WikitudePlugin.js",
+        "pluginId": "com.wikitude.phonegap.WikitudePlugin",
+        "clobbers": [
+            "WikitudePlugin"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -92,7 +100,8 @@ module.exports.metadata =
     "cordova-plugin-splashscreen": "4.0.1",
     "cordova-plugin-statusbar": "2.2.1",
     "cordova-plugin-whitelist": "1.3.1",
-    "ionic-plugin-keyboard": "2.2.1"
+    "ionic-plugin-keyboard": "2.2.1",
+    "com.wikitude.phonegap.WikitudePlugin": "6.0.1"
 };
 // BOTTOM OF METADATA
 });
