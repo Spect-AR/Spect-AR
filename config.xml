@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.myapp411173" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>myApp</name>
-  <description>An awesome Ionic/Cordova app.</description>
-  <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
+<widget id="com.spect-ar.app" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>Spect-AR</name>
+  <description>The Spect-AR project develops open-source software for reliable, scalable, face recognition in glasses. The Spect-AR provides simple tools to setup a phone app that has face recognition. This whole project can be used and advanced as needed for any reason. The main goal is to be able to recognize people with ease. </description>
+  <author email="meghamallya1@gmail.com" href="google.com">Megha, Osmar, Dean, William and Gary</author>
   <content src="index.html"/>
   <access origin="*"/>
   <allow-navigation href="http://ionic.local/*"/>
