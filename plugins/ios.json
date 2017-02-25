@@ -29,6 +29,9 @@
             "CAMERA_USAGE_DESCRIPTION": " ",
             "PHOTOLIBRARY_USAGE_DESCRIPTION": " ",
             "PACKAGE_NAME": "com.ionicframework.myapp411173"
+        },
+        "com.wikitude.phonegap.WikitudePlugin": {
+            "PACKAGE_NAME": "com.ionicframework.myapp411173"
         }
     },
     "dependent_plugins": {

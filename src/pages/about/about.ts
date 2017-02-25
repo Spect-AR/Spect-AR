@@ -12,6 +12,7 @@ import { Camera } from 'ionic-native';
 export class AboutPage {
 
   public base64Image: string;
+  
   constructor() {}
 
     takePicture(){Camera.getPicture({

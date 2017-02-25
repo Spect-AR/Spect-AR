@@ -28,6 +28,27 @@
 		0A448E1968B747A4BC6C428A /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 280CA7CABB7F46129B28AB15 /* CDVViewController+SplashScreen.m */; };
 		F57D7D21BC1E4FAA8DC6D816 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B488EE97A4D11B1715BAB /* CDVStatusBar.m */; };
 		D5533B8EED0D41BABBAC1E45 /* IonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAF005A2A954F459D351296 /* IonicKeyboard.m */; };
+		8E2198431B664BEFAB43C962 /* WTWikitudePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = BB80E530615B49BF94491F8F /* WTWikitudePlugin.m */; };
+		0D93C7C5FF1A460C87DB040D /* WTARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D20B138E8FA4C5B99EB4B35 /* WTARViewController.m */; };
+		D167E6376A564B039F7B50EF /* libWikitudeSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF28D40C9FB646C9B85AE362 /* libWikitudeSDK.a */; };
+		2C63A34D08614272AE022833 /* libWikitudeSDK-simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87AA91765B1F48DC879FFA90 /* libWikitudeSDK-simulator.a */; };
+		BE49A05530024748B5C06C37 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A55EC806754B0FA4EBE35F /* Accelerate.framework */; };
+		D5554DFB41FE409BBDB5BA2D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D21032456B4CC5823E47B2 /* CFNetwork.framework */; };
+		E6725BB35E0245ABA207DEF4 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16CD840712CC45049DAA80AA /* CoreMedia.framework */; };
+		EC5E03BE283B443FA8A83BBC /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 666FE90A160A478191692C70 /* CoreMotion.framework */; };
+		E06445A27B0F4FA18754303E /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2F6C8A7E61441B0B915514C /* CoreText.framework */; };
+		2E1E48516D61440FBCCFF374 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50FCCCE058242C98F925DD7 /* CoreVideo.framework */; };
+		7C426C8FF9444602BCCD204F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A067BBE96EB44B7802E946D /* Foundation.framework */; };
+		546E3419181E4519B2A45C27 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34194E86783B414DA0817242 /* MediaPlayer.framework */; };
+		3FAEBAC2D53B49FE8BD9C0A3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7DABA39EE846759CADA4F8 /* OpenGLES.framework */; };
+		6CD99C4029A44C9E907A4379 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7317279A196442A7AC605F65 /* Photos.framework */; };
+		10E8973D0594456A88FB5759 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06DFA7CB342B47CF9B284E21 /* QuartzCore.framework */; };
+		DC3483AF5F414FA7993FC3AD /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B52DCEA82CE4BE9B3B4E8C0 /* SafariServices.framework */; };
+		EE9897ECE5C34CB9B508A8C6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F82D4F14F14A049A5C9489 /* Security.framework */; };
+		3BDA8B42E5EF489290D0C815 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B01CA9DC1130459CBA1E3A4D /* SystemConfiguration.framework */; };
+		A736C785152F495980AC7120 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B75A45150E40068ED262C1 /* UIKit.framework */; };
+		62F2D2525493414C87D963E9 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D419D7CB9D4B4FE7897D0721 /* libc++.dylib */; };
+		3D18E5DB2E7B48A49DE828B0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A4EDE44119A4F608F55D6A0 /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +111,38 @@
 		A38E6F270C754EE1BA33B447 /* CDVStatusBar.h */ = {isa = PBXFileReference; name = "CDVStatusBar.h"; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		ACAF005A2A954F459D351296 /* IonicKeyboard.m */ = {isa = PBXFileReference; name = "IonicKeyboard.m"; path = "ionic-plugin-keyboard/IonicKeyboard.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		887B1395896B4C55A4E87599 /* IonicKeyboard.h */ = {isa = PBXFileReference; name = "IonicKeyboard.h"; path = "ionic-plugin-keyboard/IonicKeyboard.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		BB80E530615B49BF94491F8F /* WTWikitudePlugin.m */ = {isa = PBXFileReference; name = "WTWikitudePlugin.m"; path = "com.wikitude.phonegap.WikitudePlugin/WTWikitudePlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		1D20B138E8FA4C5B99EB4B35 /* WTARViewController.m */ = {isa = PBXFileReference; name = "WTARViewController.m"; path = "com.wikitude.phonegap.WikitudePlugin/WTARViewController.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		DF28D40C9FB646C9B85AE362 /* libWikitudeSDK.a */ = {isa = PBXFileReference; name = "libWikitudeSDK.a"; path = "myApp/Plugins/com.wikitude.phonegap.WikitudePlugin/libWikitudeSDK.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		87AA91765B1F48DC879FFA90 /* libWikitudeSDK-simulator.a */ = {isa = PBXFileReference; name = "libWikitudeSDK-simulator.a"; path = "myApp/Plugins/com.wikitude.phonegap.WikitudePlugin/libWikitudeSDK-simulator.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		366FB680C033400698543D2C /* WTWikitudePlugin.h */ = {isa = PBXFileReference; name = "WTWikitudePlugin.h"; path = "com.wikitude.phonegap.WikitudePlugin/WTWikitudePlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		AEE25D587D114D2EAC2699E4 /* WTARViewController.h */ = {isa = PBXFileReference; name = "WTARViewController.h"; path = "com.wikitude.phonegap.WikitudePlugin/WTARViewController.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		7790C9A81C684D0788F448DB /* WikitudeSDK.h */ = {isa = PBXFileReference; name = "WikitudeSDK.h"; path = "com.wikitude.phonegap.WikitudePlugin/WikitudeSDK.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		E2B758CB60A843F88FCFB145 /* WTArchitectView.h */ = {isa = PBXFileReference; name = "WTArchitectView.h"; path = "com.wikitude.phonegap.WikitudePlugin/WTArchitectView.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		CB16A936D647408098436EB0 /* WTNavigation.h */ = {isa = PBXFileReference; name = "WTNavigation.h"; path = "com.wikitude.phonegap.WikitudePlugin/WTNavigation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		98559B357CDE4588B5C1A56D /* WTStartupConfiguration.h */ = {isa = PBXFileReference; name = "WTStartupConfiguration.h"; path = "com.wikitude.phonegap.WikitudePlugin/WTStartupConfiguration.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		822B49FE1CB64CC292E6D7D9 /* WTArchitectStartupConfiguration.h */ = {isa = PBXFileReference; name = "WTArchitectStartupConfiguration.h"; path = "com.wikitude.phonegap.WikitudePlugin/WTArchitectStartupConfiguration.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		1F9EB7E939D140FDADF96B41 /* WTSDKBuildInformation.h */ = {isa = PBXFileReference; name = "WTSDKBuildInformation.h"; path = "com.wikitude.phonegap.WikitudePlugin/WTSDKBuildInformation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		1238237CDC3E4104B4D42086 /* WTArchitectViewDebugDelegate.h */ = {isa = PBXFileReference; name = "WTArchitectViewDebugDelegate.h"; path = "com.wikitude.phonegap.WikitudePlugin/WTArchitectViewDebugDelegate.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		AFE549F7F4F54C258E9E3BE0 /* WTAuthorizationRequestManager.h */ = {isa = PBXFileReference; name = "WTAuthorizationRequestManager.h"; path = "com.wikitude.phonegap.WikitudePlugin/WTAuthorizationRequestManager.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		2ACBDCB6B80F42BBAA5DE799 /* WTWikitudeTypes.h */ = {isa = PBXFileReference; name = "WTWikitudeTypes.h"; path = "com.wikitude.phonegap.WikitudePlugin/WTWikitudeTypes.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		76A55EC806754B0FA4EBE35F /* Accelerate.framework */ = {isa = PBXFileReference; name = "Accelerate.framework"; path = "System/Library/Frameworks/Accelerate.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		97D21032456B4CC5823E47B2 /* CFNetwork.framework */ = {isa = PBXFileReference; name = "CFNetwork.framework"; path = "System/Library/Frameworks/CFNetwork.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		16CD840712CC45049DAA80AA /* CoreMedia.framework */ = {isa = PBXFileReference; name = "CoreMedia.framework"; path = "System/Library/Frameworks/CoreMedia.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		666FE90A160A478191692C70 /* CoreMotion.framework */ = {isa = PBXFileReference; name = "CoreMotion.framework"; path = "System/Library/Frameworks/CoreMotion.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		A2F6C8A7E61441B0B915514C /* CoreText.framework */ = {isa = PBXFileReference; name = "CoreText.framework"; path = "System/Library/Frameworks/CoreText.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		E50FCCCE058242C98F925DD7 /* CoreVideo.framework */ = {isa = PBXFileReference; name = "CoreVideo.framework"; path = "System/Library/Frameworks/CoreVideo.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		6A067BBE96EB44B7802E946D /* Foundation.framework */ = {isa = PBXFileReference; name = "Foundation.framework"; path = "System/Library/Frameworks/Foundation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		34194E86783B414DA0817242 /* MediaPlayer.framework */ = {isa = PBXFileReference; name = "MediaPlayer.framework"; path = "System/Library/Frameworks/MediaPlayer.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		CA7DABA39EE846759CADA4F8 /* OpenGLES.framework */ = {isa = PBXFileReference; name = "OpenGLES.framework"; path = "System/Library/Frameworks/OpenGLES.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		7317279A196442A7AC605F65 /* Photos.framework */ = {isa = PBXFileReference; name = "Photos.framework"; path = "System/Library/Frameworks/Photos.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		06DFA7CB342B47CF9B284E21 /* QuartzCore.framework */ = {isa = PBXFileReference; name = "QuartzCore.framework"; path = "System/Library/Frameworks/QuartzCore.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		0B52DCEA82CE4BE9B3B4E8C0 /* SafariServices.framework */ = {isa = PBXFileReference; name = "SafariServices.framework"; path = "System/Library/Frameworks/SafariServices.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		E1F82D4F14F14A049A5C9489 /* Security.framework */ = {isa = PBXFileReference; name = "Security.framework"; path = "System/Library/Frameworks/Security.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		B01CA9DC1130459CBA1E3A4D /* SystemConfiguration.framework */ = {isa = PBXFileReference; name = "SystemConfiguration.framework"; path = "System/Library/Frameworks/SystemConfiguration.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		D4B75A45150E40068ED262C1 /* UIKit.framework */ = {isa = PBXFileReference; name = "UIKit.framework"; path = "System/Library/Frameworks/UIKit.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		D419D7CB9D4B4FE7897D0721 /* libc++.dylib */ = {isa = PBXFileReference; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
+		6A4EDE44119A4F608F55D6A0 /* libz.dylib */ = {isa = PBXFileReference; name = "libz.dylib"; path = "usr/lib/libz.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +154,25 @@
 				A6485466EAB94821B5691911 /* ImageIO.framework in Frameworks */,
 				E6B300A4C9074B3DBE5D6859 /* CoreLocation.framework in Frameworks */,
 				AFA92D96A6834240BAC42819 /* AVFoundation.framework in Frameworks */,
+				D167E6376A564B039F7B50EF /* libWikitudeSDK.a in Frameworks */,
+				2C63A34D08614272AE022833 /* libWikitudeSDK-simulator.a in Frameworks */,
+				BE49A05530024748B5C06C37 /* Accelerate.framework in Frameworks */,
+				D5554DFB41FE409BBDB5BA2D /* CFNetwork.framework in Frameworks */,
+				E6725BB35E0245ABA207DEF4 /* CoreMedia.framework in Frameworks */,
+				EC5E03BE283B443FA8A83BBC /* CoreMotion.framework in Frameworks */,
+				E06445A27B0F4FA18754303E /* CoreText.framework in Frameworks */,
+				2E1E48516D61440FBCCFF374 /* CoreVideo.framework in Frameworks */,
+				7C426C8FF9444602BCCD204F /* Foundation.framework in Frameworks */,
+				546E3419181E4519B2A45C27 /* MediaPlayer.framework in Frameworks */,
+				3FAEBAC2D53B49FE8BD9C0A3 /* OpenGLES.framework in Frameworks */,
+				6CD99C4029A44C9E907A4379 /* Photos.framework in Frameworks */,
+				10E8973D0594456A88FB5759 /* QuartzCore.framework in Frameworks */,
+				DC3483AF5F414FA7993FC3AD /* SafariServices.framework in Frameworks */,
+				EE9897ECE5C34CB9B508A8C6 /* Security.framework in Frameworks */,
+				3BDA8B42E5EF489290D0C815 /* SystemConfiguration.framework in Frameworks */,
+				A736C785152F495980AC7120 /* UIKit.framework in Frameworks */,
+				62F2D2525493414C87D963E9 /* libc++.dylib in Frameworks */,
+				3D18E5DB2E7B48A49DE828B0 /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +246,25 @@
 				9E84E8EFBCCC464DBEF9BC6B /* ImageIO.framework */,
 				5675D82995A943B0858C21D8 /* CoreLocation.framework */,
 				F15BB5A6565A49C5BF2CABDB /* AVFoundation.framework */,
+				DF28D40C9FB646C9B85AE362 /* libWikitudeSDK.a */,
+				87AA91765B1F48DC879FFA90 /* libWikitudeSDK-simulator.a */,
+				76A55EC806754B0FA4EBE35F /* Accelerate.framework */,
+				97D21032456B4CC5823E47B2 /* CFNetwork.framework */,
+				16CD840712CC45049DAA80AA /* CoreMedia.framework */,
+				666FE90A160A478191692C70 /* CoreMotion.framework */,
+				A2F6C8A7E61441B0B915514C /* CoreText.framework */,
+				E50FCCCE058242C98F925DD7 /* CoreVideo.framework */,
+				6A067BBE96EB44B7802E946D /* Foundation.framework */,
+				34194E86783B414DA0817242 /* MediaPlayer.framework */,
+				CA7DABA39EE846759CADA4F8 /* OpenGLES.framework */,
+				7317279A196442A7AC605F65 /* Photos.framework */,
+				06DFA7CB342B47CF9B284E21 /* QuartzCore.framework */,
+				0B52DCEA82CE4BE9B3B4E8C0 /* SafariServices.framework */,
+				E1F82D4F14F14A049A5C9489 /* Security.framework */,
+				B01CA9DC1130459CBA1E3A4D /* SystemConfiguration.framework */,
+				D4B75A45150E40068ED262C1 /* UIKit.framework */,
+				D419D7CB9D4B4FE7897D0721 /* libc++.dylib */,
+				6A4EDE44119A4F608F55D6A0 /* libz.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -218,6 +309,19 @@
 				A38E6F270C754EE1BA33B447 /* CDVStatusBar.h */,
 				ACAF005A2A954F459D351296 /* IonicKeyboard.m */,
 				887B1395896B4C55A4E87599 /* IonicKeyboard.h */,
+				BB80E530615B49BF94491F8F /* WTWikitudePlugin.m */,
+				1D20B138E8FA4C5B99EB4B35 /* WTARViewController.m */,
+				366FB680C033400698543D2C /* WTWikitudePlugin.h */,
+				AEE25D587D114D2EAC2699E4 /* WTARViewController.h */,
+				7790C9A81C684D0788F448DB /* WikitudeSDK.h */,
+				E2B758CB60A843F88FCFB145 /* WTArchitectView.h */,
+				CB16A936D647408098436EB0 /* WTNavigation.h */,
+				98559B357CDE4588B5C1A56D /* WTStartupConfiguration.h */,
+				822B49FE1CB64CC292E6D7D9 /* WTArchitectStartupConfiguration.h */,
+				1F9EB7E939D140FDADF96B41 /* WTSDKBuildInformation.h */,
+				1238237CDC3E4104B4D42086 /* WTArchitectViewDebugDelegate.h */,
+				AFE549F7F4F54C258E9E3BE0 /* WTAuthorizationRequestManager.h */,
+				2ACBDCB6B80F42BBAA5DE799 /* WTWikitudeTypes.h */,
 			);
 			name = Plugins;
 			path = "myApp/Plugins";
@@ -339,6 +443,8 @@
 				0A448E1968B747A4BC6C428A /* CDVViewController+SplashScreen.m in Sources */,
 				F57D7D21BC1E4FAA8DC6D816 /* CDVStatusBar.m in Sources */,
 				D5533B8EED0D41BABBAC1E45 /* IonicKeyboard.m in Sources */,
+				8E2198431B664BEFAB43C962 /* WTWikitudePlugin.m in Sources */,
+				0D93C7C5FF1A460C87DB040D /* WTARViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +480,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				PRODUCT_NAME = "myApp";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/myApp/Plugins/com.wikitude.phonegap.WikitudePlugin\"",
+					"\"$(SRCROOT)/myApp/Plugins/com.wikitude.phonegap.WikitudePlugin\"",
+				);
 			};
 			name = Debug;
 		};
@@ -396,6 +507,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				PRODUCT_NAME = "myApp";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/myApp/Plugins/com.wikitude.phonegap.WikitudePlugin\"",
+					"\"$(SRCROOT)/myApp/Plugins/com.wikitude.phonegap.WikitudePlugin\"",
+				);
 			};
 			name = Release;
 		};
