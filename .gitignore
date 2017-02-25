@@ -4,3 +4,5 @@
 .DS_Store
 www/build/main.js
 www/build/main.js.map
+platforms/ios/Spect-AR.xcworkspace/xcuserdata/
+platforms/ios/CordovaLib/CordovaLib.xcodeproj/xcuserdata/
