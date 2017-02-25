@@ -35,12 +35,20 @@
     <feature name="Keyboard">
         <param name="ios-package" onload="true" value="IonicKeyboard" />
     </feature>
+    <feature name="WikitudePlugin">
+        <param name="ios-package" value="WTWikitudePlugin" />
+    </feature>
     <name>myApp</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
-    <content src="index.html" />
+    <content original-src="index.html" src="http://10.192.73.207:8100" />
     <access origin="*" />
     <allow-navigation href="http://ionic.local/*" />
+<<<<<<< HEAD
+    <allow-navigation href="http://10.192.73.207:8100" />
+=======
+    <allow-navigation href="http://10.192.234.234:8100" />
+>>>>>>> b6014e126d11d7bc517851725d0ba6ece497ee46
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
