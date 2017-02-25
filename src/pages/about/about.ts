@@ -13,9 +13,8 @@ export class AboutPage {
 
   public base64Image: string;
   
-  constructor() {}
-
-    takePicture(){Camera.getPicture({
+  constructor() {
+    Camera.getPicture({
     destinationType: Camera.DestinationType.DATA_URL,
     quality: 100,
     targetWidth: 10000,
@@ -25,10 +24,12 @@ export class AboutPage {
      // imageData is either a base64 encoded string or a file URI
      // If it's base64:
      this.base64Image = 'data:image/jpeg;base64,' + imageData;
+     
     }, (err) => {
      // Handle error
      console.log(err);
     });
-    }
+
+  }
 
 }
