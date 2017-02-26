@@ -14,10 +14,10 @@ export class UserPage {
 
   user: any;
   userReady: boolean = false;
-  nav: NavController;
+
 
   constructor(public navCtrl: NavController) {
-    this.nav = navCtrl;
+
     this.navCtrl.push(AboutPage);
   }
 
@@ -31,8 +31,8 @@ export class UserPage {
         picture: data.picture
       };
         env.userReady = true;
-        var contact = new ContactPage(this.nav);
-        contact.setPic(data.picture);
+        // var contact = new ContactPage();
+        AboutPage.changePic(data.picture);
     }, function(error){
       console.log(error);
     });

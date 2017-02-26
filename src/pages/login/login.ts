@@ -13,21 +13,21 @@ export class LoginPage {
 
   constructor(public navCtrl: NavController) {
     Facebook.browserInit(this.FB_APP_ID, "v2.8");
+    
   }
 
-  doFbLogin(){
+doFbLogin(){
     let permissions = new Array();
     let nav = this.navCtrl;
     //the permissions your facebook app needs from the user
     permissions = ["public_profile"];
 
-    
 
     Facebook.login(permissions)
     .then(function(response){
       let userId = response.authResponse.userID;
       let params = new Array();
-      console.log(userId);
+
       //Getting name and gender properties
       Facebook.api("/me?fields=name,gender", params)
       .then(function(user) {
@@ -44,12 +44,8 @@ export class LoginPage {
         }, function (error) {
           console.log(error);
         })
-        
       })
-
-      
     }, function(error){
-
       console.log(error);
     });
   }

@@ -14,26 +14,33 @@ export class ContactPage {
     public base64: string;
     public pic: any;
 
-    constructor(public navCtrl: NavController) {
-        var bytesOfImage1 = 1;
-        var bytesOfImage2 = 1;
-        var faceId1 = this.getFaceId(bytesOfImage1);
-        var faceId2 = this.getFaceId(bytesOfImage2);
-        var response = this.faceVerify(faceId1, faceId2);
-        console.log(response.isIdentical);
+    constructor() {
+        // var bytesOfImage1 = 1;
+        // var bytesOfImage2 = 1;
+        // var faceId1 = this.getFaceId(bytesOfImage1);
+        // var faceId2 = this.getFaceId(bytesOfImage2);
+        // var response = this.faceVerify(faceId1, faceId2);
+        // console.log(response.isIdentical);
         
     }
 
     setBase64(mes){
         this.base64 = mes;
-        console.log("Get image base");
-        var byteArray = this.b64toBlob(this.base64, 512);
-        console.log();
-        this.faceVerify(byteArray, this.pic);   
+
+        var byteArray = this.b64toBlob(this.base64, 1296);
+        console.log("HEYHEY");
+        console.log(byteArray);
+        // alert(this.getFaceId(byteArray));
+        alert(this.getFaceId(this.pic));
+        var otherUrl = "https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/11071501_1566936493564305_5042811042189696337_n.jpg?oh=ba18772bbbfd89daafdd9a4237ef70fc&oe=59467009";
+        var picky = this.faceVerify(this.getFaceId(otherUrl), this.getFaceId(otherUrl));
+        console.log("WESHOULDDONEHIS", picky.confidence);
+        alert(picky.confidence);      
     }
     setPic(pic){
         this.pic = pic;
         console.log(pic);
+
     }
 
     /* turn bytes array of image into face ID */
@@ -49,12 +56,21 @@ export class ContactPage {
             url: "https://westus.api.cognitive.microsoft.com/face/v1.0/detect?" + $.param(params),
             beforeSend: function(xhrObj) {
                 // Request headers
+                
+                // if(bytesOfImage instanceof String){
+                    // console.log(bytesOfImage, 'json');
+                console.log("goodie");
                 xhrObj.setRequestHeader("Content-Type","application/json");
+                // } else{
+                
+                //     xhrObj.setRequestHeader("Content-Type","application/octet-stream");
+                // }
                 xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","2371df3723034c31ad7fa1edcaaef6ec");
+                
             },
             type: "POST",
             // Request body
-            data: "{\"url\": \"https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/11071501_1566936493564305_5042811042189696337_n.jpg?oh=ba18772bbbfd89daafdd9a4237ef70fc&oe=59467009\"}", // bytesOfImage,
+            data: "{\"url\": \""+bytesOfImage+"\"}", // bytesOfImage,
         })
         .done(function(data) {
             response = data[0];
