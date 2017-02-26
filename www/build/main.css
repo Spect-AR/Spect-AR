@@ -1,3 +1,4 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
 .ion-ios-add:before {
   content: "\f102";
 }
@@ -24400,4 +24401,39 @@ page-about .center {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.projLoginContent {
+  background-color: #A5E8CD;
+}
+
+.loginLogo {
+  margin-top: 50%;
+  margin-left: 20%;
+  margin-bottom: 0;
+  width: 60%;
+}
+
+.projName {
+  margin-top: 0;
+  color: #333333;
+  font-family: 'Nanum Pen Script', regular;
+  text-align: center;
+  font-size: 72px;
+  margin-bottom: 140px;
+}
+
+.loginButton {
+  height: 50px;
+  margin-left: 15%;
+  width: 70%;
+  font-size: 18px;
+  background-color: #A5E8CD !important;
+  border: 2px solid #333333;
+  border-radius: 3px;
+}
+
+.loginButton:active {
+  background-color: #333333 !important;
+  color: #A5E8CD;
 }
