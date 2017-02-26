@@ -65,5 +65,13 @@
             "APP_ID": "257410241352880",
             "APP_NAME": "spect-ar"
         }
+    },
+    "cordova-plugin-file": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-file"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

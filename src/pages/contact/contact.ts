@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
 
+import { AboutPage } from '../about/about';
 // import $ from "jquery";
 import * as $ from "jquery";
 
@@ -18,7 +19,14 @@ export class ContactPage {
         var faceId2 = this.getFaceId(bytesOfImage2);
         var response = this.faceVerify(faceId1, faceId2);
         console.log(response.isIdentical);
+
+        var image = new AboutPage(navCtrl);
+        console.log(image.getBase());
+        var imageByteArray = this.b64toBlob(image.base64Image, 512);
+        this.faceSearch(imageByteArray, null);
+        
     }
+
 
     /* turn bytes array of image into face ID */
     getFaceId(bytesOfImage) {
@@ -102,5 +110,27 @@ export class ContactPage {
             }
         }
         return maxConfidenceUser;
+    }
+
+    b64toBlob(b64Data, sliceSize) {
+        sliceSize = sliceSize || 512;
+
+        var byteCharacters = atob(b64Data);
+        var byteArrays = [];
+
+        for (var offset = 0; offset < byteCharacters.length; offset += sliceSize) {
+            var slice = byteCharacters.slice(offset, offset + sliceSize);
+
+            var byteNumbers = new Array(slice.length);
+            for (var i = 0; i < slice.length; i++) {
+                byteNumbers[i] = slice.charCodeAt(i);
+            }
+
+            var byteArray = new Uint8Array(byteNumbers);
+
+            byteArrays.push(byteArray);
+        }
+
+      return byteArray;
     }
 }

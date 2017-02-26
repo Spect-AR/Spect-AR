@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Facebook, NativeStorage } from 'ionic-native';
 import { LoginPage } from '../login/login';
+import { AboutPage } from '../about/about';
 
 @Component({
   selector: 'page-user',
@@ -13,7 +14,9 @@ export class UserPage {
   user: any;
   userReady: boolean = false;
 
-  constructor(public navCtrl: NavController) {}
+  constructor(public navCtrl: NavController) {
+    this.navCtrl.push(AboutPage);
+  }
 
   ionViewCanEnter(){
     let env = this;

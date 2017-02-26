@@ -32,6 +32,9 @@
         },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "com.spect_ar.app"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.spect_ar.app"
         }
     },
     "dependent_plugins": {
