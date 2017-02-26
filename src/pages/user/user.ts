@@ -20,11 +20,29 @@ export class UserPage {
     NativeStorage.getItem('user')
     .then(function (data){
       env.user = {
+        id: data.id,
         name: data.name,
         gender: data.gender,
-        picture: data.picture
+        picture: data.picture,
       };
         env.userReady = true;
+        // get picture:name pairs of this user's friends
+        let permissions = ["public_profile", "user_friends"];
+        let friendPictures = {};
+        
+        Facebook.api("/"+data.id+"/friends", permissions)
+        .then(function(allFriends) {
+            let friends = allFriends.data;
+
+            for (let friend of friends){
+                var pictureUrl = "https://graph.facebook.com/" + friend.id + "/picture?width=1000&height=1000";
+                friendPictures[pictureUrl] = friend.name;
+            }
+
+        }, function (error) {
+          alert("this error");
+          console.log(error);
+        })
     }, function(error){
       console.log(error);
     });
@@ -41,4 +59,6 @@ export class UserPage {
       console.log(error);
     });
   }
+
+
 }

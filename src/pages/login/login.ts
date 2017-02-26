@@ -15,42 +15,52 @@ export class LoginPage {
     Facebook.browserInit(this.FB_APP_ID, "v2.8");
   }
 
+
   doFbLogin(){
     let permissions = new Array();
     let nav = this.navCtrl;
     //the permissions your facebook app needs from the user
-    permissions = ["public_profile"];
-
-    
+    permissions = ["public_profile", "user_friends"];
 
     Facebook.login(permissions)
     .then(function(response){
-      let userId = response.authResponse.userID;
+      var userId = response.authResponse.userID;
+      let accessToken = response.authResponse.accessToken;
+      //alert(accessToken);
       let params = new Array();
-      console.log(userId);
+      //console.log(userId);
+
+
       //Getting name and gender properties
-      Facebook.api("/me?fields=name,gender", params)
+      Facebook.api("/me?fields=id, name, gender", params)
       .then(function(user) {
-        user.picture = "https://graph.facebook.com/" + userId + "/picture?type=large";
+        user.picture = "https://graph.facebook.com/" + userId + "/picture?width=1000&width=1000";
+
         //now we have the users info, let's save it in the NativeStorage
         NativeStorage.setItem('user',
         {
+          id: user.id,
           name: user.name,
           gender: user.gender,
           picture: user.picture
         })
         .then(function(){
+          //alert(user.id);
           nav.push(UserPage);
+
         }, function (error) {
+          alert("error")
           console.log(error);
         })
-        
+
       })
 
-      
+
+
     }, function(error){
 
       console.log(error);
     });
   }
+
 }
