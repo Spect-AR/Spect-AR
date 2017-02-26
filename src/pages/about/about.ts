@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 
 import { Camera } from 'ionic-native';
-
+import { NavController} from 'ionic-angular';
+import {ContactPage} from "../contact/contact";
 
 
 
@@ -13,7 +14,7 @@ export class AboutPage {
 
   public base64Image: string;
   
-  constructor() {
+  constructor(public navCntrl: NavController) {
     Camera.getPicture({
     destinationType: Camera.DestinationType.DATA_URL,
     quality: 100,
@@ -24,12 +25,17 @@ export class AboutPage {
      // imageData is either a base64 encoded string or a file URI
      // If it's base64:
      this.base64Image = 'data:image/jpeg;base64,' + imageData;
+
      
     }, (err) => {
      // Handle error
      console.log(err);
     });
+    this.navCntrl.push(ContactPage);
+  }
 
+  getBase(){
+    return this.base64Image;
   }
 
 }
