@@ -13,8 +13,10 @@ import {ContactPage} from "../contact/contact";
 export class AboutPage {
 
   public base64Image: string;
+  public nav: NavController;
   
   constructor(public navCntrl: NavController) {
+    this.nav = navCntrl;
     Camera.getPicture({
     destinationType: Camera.DestinationType.DATA_URL,
     quality: 100,
@@ -31,11 +33,15 @@ export class AboutPage {
      // Handle error
      console.log(err);
     });
-    this.navCntrl.push(ContactPage);
+    
   }
 
   getBase(){
     return this.base64Image;
+  }
+
+  changePage(){
+    this.nav.push(ContactPage);
   }
 
 }

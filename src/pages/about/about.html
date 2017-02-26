@@ -5,7 +5,7 @@
 
 <ion-content class="center">
       <img [src]="base64Image" *ngIf="base64Image"/>
-      <button ion-button round> 
+      <button (click)="changePage" ion-button round> 
       <ion-icon name="log-out"></ion-icon>
         </button>
 
