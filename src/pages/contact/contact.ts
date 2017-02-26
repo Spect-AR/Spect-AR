@@ -11,6 +11,7 @@ import * as $ from "jquery";
   templateUrl: 'contact.html'
 })
 export class ContactPage {
+    public base64: string;
 
     constructor(public navCtrl: NavController) {
         var bytesOfImage1 = 1;
@@ -20,13 +21,18 @@ export class ContactPage {
         var response = this.faceVerify(faceId1, faceId2);
         console.log(response.isIdentical);
 
-        var image = new AboutPage(navCtrl);
-        console.log(image.getBase());
-        var imageByteArray = this.b64toBlob(image.base64Image, 512);
-        this.faceSearch(imageByteArray, []);
+        
         
     }
 
+    setBase64(mes){
+        this.base64 = mes;
+        console.log("Get image base");
+        var byteArray = this.b64toBlob(this.base64, 512);
+        console.log();
+        this.faceVerify(byteArray, byteArray);
+        
+    }
 
     /* turn bytes array of image into face ID */
     getFaceId(bytesOfImage) {
@@ -114,8 +120,8 @@ export class ContactPage {
 
     b64toBlob(b64Data, sliceSize) {
         sliceSize = sliceSize || 512;
-
-        var byteCharacters = atob(b64Data);
+        
+        var byteCharacters = b64Data;
         var byteArrays = [];
 
         for (var offset = 0; offset < byteCharacters.length; offset += sliceSize) {
