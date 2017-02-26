@@ -23,7 +23,7 @@ export class ContactPage {
         var image = new AboutPage(navCtrl);
         console.log(image.getBase());
         var imageByteArray = this.b64toBlob(image.base64Image, 512);
-        this.faceSearch(imageByteArray, null);
+        this.faceSearch(imageByteArray, []);
         
     }
 

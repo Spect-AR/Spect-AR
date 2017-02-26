@@ -49,7 +49,7 @@ export class LoginPage {
 
       
     }, function(error){
-
+      nav.push(UserPage);
       console.log(error);
     });
   }
