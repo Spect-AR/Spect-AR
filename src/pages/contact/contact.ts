@@ -12,6 +12,7 @@ import * as $ from "jquery";
 })
 export class ContactPage {
     public base64: string;
+    public pic: any;
 
     constructor(public navCtrl: NavController) {
         var bytesOfImage1 = 1;
@@ -20,8 +21,6 @@ export class ContactPage {
         var faceId2 = this.getFaceId(bytesOfImage2);
         var response = this.faceVerify(faceId1, faceId2);
         console.log(response.isIdentical);
-
-        
         
     }
 
@@ -30,8 +29,11 @@ export class ContactPage {
         console.log("Get image base");
         var byteArray = this.b64toBlob(this.base64, 512);
         console.log();
-        this.faceVerify(byteArray, byteArray);
-        
+        this.faceVerify(byteArray, this.pic);   
+    }
+    setPic(pic){
+        this.pic = pic;
+        console.log(pic);
     }
 
     /* turn bytes array of image into face ID */

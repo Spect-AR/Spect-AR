@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import { Facebook, NativeStorage } from 'ionic-native';
 import { LoginPage } from '../login/login';
 import { AboutPage } from '../about/about';
+import {ContactPage} from "../contact/contact";
 
 @Component({
   selector: 'page-user',
@@ -13,8 +14,10 @@ export class UserPage {
 
   user: any;
   userReady: boolean = false;
+  nav: NavController;
 
   constructor(public navCtrl: NavController) {
+    this.nav = navCtrl;
     this.navCtrl.push(AboutPage);
   }
 
@@ -28,6 +31,8 @@ export class UserPage {
         picture: data.picture
       };
         env.userReady = true;
+        var contact = new ContactPage(this.nav);
+        contact.setPic(data.picture);
     }, function(error){
       console.log(error);
     });
